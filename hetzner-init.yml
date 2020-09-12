@@ -15,10 +15,10 @@
     msg: "{{ server }}"
 
 
-- name: Finde den ersten
-  debug:
-    msg: "{{ node_start_id }}{{ item }}"
+#- name: Finde den ersten
+#  debug:
+#    msg: "{{ node_start_id }}{{ item }}"
 
-- name: Finde den ersten
-  debug:
-    msg: "{% if not item == node_start_id %}node{% else %}master{% endif %}"
+#- name: Finde den ersten
+#  debug:
+#    msg: "{% if not item == node_start_id %}node{% else %}master{% endif %}"

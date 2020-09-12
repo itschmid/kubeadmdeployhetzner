@@ -23,3 +23,11 @@
 - import_playbook: master-init.yml
 - import_playbook: nodes-join.yml
 
+- name: "-----------------------------------"
+  hosts: localhost
+  connection: local
+  gather_facts: False
+  tasks:
+  - name: Information
+    debug:
+      msg: "You can now log in on the Master with ssh {{ e2m_user }}@{{ hostvars[groups['k8s_master_yes'][0]].ansible_host }}"
