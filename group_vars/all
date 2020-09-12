@@ -3,7 +3,8 @@ e2m_user: e2m
 cni: calico
 #cni: weave
 hetzner_server_type: cx21
-hetzner_image: ubuntu-20.04
+#hetzner_image: ubuntu-20.04
+hetzner_image: ubuntu-18.04
 hetzner_location: nbg1
 hetzner_ssh_keys: TUXEDOBOOK
 node_start_id: 1
