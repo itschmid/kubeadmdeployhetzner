@@ -26,3 +26,9 @@
       src: https://github.com/derailed/k9s/releases/download/v0.21.7/k9s_Linux_x86_64.tar.gz
       dest: /usr/local/bin
       remote_src: yes
+  - name: Download Workshop
+    git:
+      repo: https://github.com/erkules/k8sworkshop.git
+      dest: "/home/{{e2m_user}}/k8sworkshop"
+
+
